@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form registrasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <body>
+        
+        <div class="form-container">
+            <h1>Sign Up Registration</h1>
+            <form id="registrationForm" action="/register" method="post" >
+              <label for="name">Nama:</label>
+              <input type="text" id="name" name="name" placeholder="ex tewog" required><br>
+          
+              <label for="gender">Jenis Kelamin:</label>
+              <select id="gender" name="gender" required>
+                <option value="male">laki-laki</option>
+                <option value="female">perempuan</option>
+              </select><br>
+          
+              <label for="phone">Nomor Telepon:</label>
+              <input type="tel" id="phone" name="phone" placeholder="0877xx...." required><br>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="contoh@..." required><br>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="ok****" required><br>
+              <p><input type="checkbox">I Agree to the Terms of Service and Privacy Notice</p>
+              <input type="submit" value="Sign me up!">
+            </form>
+
+            <script>
+                document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Menambahkan event listener untuk menangani pengiriman formulir pendaftaran
+                });
+            </script>
+            <script src="script.js"></script>
+
+</body>
+</html>
